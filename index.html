@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="bg-gray-100">
+  <script type="module" src="main.js"></script>
+  <div>
+    <header class="bgwhite shadow p-6 space-y-3 md:space-y-0 flex flex-col md:flex-row items-center justify-between">
+      <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-300">BAKERY</div>
+  
+      <div class="flex flex-col md:flex-row md:space-x-4 lg:space-x-8 items-center mt-4 md:mt-0">
+          <button class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Home</button>
+          <button class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">About Us</button>
+          <button class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Products</button>
+          <button class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Shop</button>
+          <button class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Faq</button>
+          <button class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Evenimente</button>
+          <button class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200 flex items-center">
+              Cos <i class="bi bi-cart ml-2"></i>
+          </button>
+      </div>
+  </header>
+  
+  <div class="size-full ">
+    <img src="images/home.jpg  " class="w-full transform transition-transform duration-600 hover:scale-110">
+  </div>
+
+  <!-- Grilă de produse -->
+  <div class="my-12 p-6 w-full max-w-6xl mx-auto ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-stretch">
+        <!-- Card Macarons -->
+        <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+            <img src="images/macaronceVan.jpg" alt="Macarons" class="w-full h-auto object-cover rounded-t-lg">
+            <div class="mt-4 flex-grow flex flex-col justify-between">
+                <h3 class="text-lg font-semibold">Macarons</h3>
+                <p class="font-bold">Pret 9,00 lei</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+
+        <!-- Card Tort cu zmeură -->
+        <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+            <img src="images/tortZm.jpg" alt="Tort cu zmeură" class="w-full h-auto object-cover rounded-t-lg">
+            <div class="mt-4 flex-grow flex flex-col justify-between">
+                <h3 class="text-lg font-semibold">Tort cu zmeură</h3>
+                <p class="font-bold">Pret 250,00 lei</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+
+        <!-- Card Ecler -->
+        <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+            <img src="images/eclerC1.jpg" alt="Ecler" class="w-full h-auto object-cover rounded-t-lg">
+            <div class="mt-4 flex-grow flex flex-col justify-between">
+                <h3 class="text-lg font-semibold">Ecler</h3>
+                <p class="font-bold">Pret 15,00 lei</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+
+        <!-- Card Brioșă cu ciocolată -->
+        <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+            <img src="images/muffinC.jpg" alt="Brioșă cu ciocolată" class="w-full h-auto object-cover rounded-t-lg">
+            <div class="mt-4 flex-grow flex flex-col justify-between">
+                <h3 class="text-lg font-semibold">Brioșă cu ciocolată</h3>
+                <p class="font-bold">Pret 10,00 lei</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <div class="container mx-auto p-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="col-span-2 row-span-1">
+        <img src="images/macaronce.jpg" class="w-full h-full object-cover rounded-lg shadow-lg">
+      </div>
+
+      <div class="col-span-2 row-span-3">
+        <img src="images/vaniliepraj.jpg" class="w-full h-full object-cover rounded-lg shadow-lg">
+      </div>
+      <div class="col-span-2 row-span-1">
+        <img src="images/tortZm.jpg" class="w-full h-full object-cover rounded-lg shadow-lg">
+      </div>
+      <div class="col-span-2 row-span-1">
+        <img src="images/muffinC.jpg" class="w-auto h-auto object-cover rounded-lg shadow-lg">
+      </div>
+    </div>
+  </div>
+ 
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+            
+            <!-- Despre Noi -->
+            <div class="text-center md:text-left md:w-1/2">
+                <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Despre Noi</h2>
+                <p class="mt-2 text-gray-400 text-sm md:text-base lg:text-lg">
+                    Suntem o patiserie artizanală, dedicată preparării dulciurilor proaspete și delicioase. Vizitați-ne pentru a
+                    descoperi produsele noastre!
+                </p>
+            </div>
+
+            <!-- Urmărește-ne -->
+            <div class="text-center md:text-right md:w-1/2">
+                <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Urmărește-ne</h2>
+                <div class="flex justify-center md:justify-end mt-2 space-x-4 text-gray-400">
+                    <a href="#" class="hover:text-white"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="#" class="hover:text-white"><i class="bi bi-instagram"></i> Instagram</a>
+                    <a href="#" class="hover:text-white"><i class="bi bi-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Drepturi de autor -->
+        <div class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
+            <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
+        </div>
+    </div>
+</footer>
+</div>
+
+</body>
+
+</html>
