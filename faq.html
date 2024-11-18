@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="bg-gray-100">
+  <script type="module" src="main.js"></script>
+  <div>
+    <header class="sticky top-0 z-50 bg-gray-100 ">
+      <div class="bgwhite p-6 space-y-3 md:space-y-0 flex flex-col md:flex-row items-center justify-between">
+          <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-300">BAKERY</div>
+  
+          <div class="flex flex-col md:flex-row md:space-x-4 lg:space-x-8 items-center mt-4 md:mt-0">
+              <a href="index.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Home</a>
+              <a href="aboutUs.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">About Us</a>
+              <a href="products.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Products</a>
+              <a href="shop.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Shop</a>
+              <a href="faq.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Faq</a>
+              <a href="events.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Evenimente</a>
+              <a href="cart.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200 flex items-center">
+                  Cos <i class="bi bi-cart ml-2"></i>
+              </a>
+          </div>
+        </header>
+        <div class="relative w-screen h-48 mt-10">
+            <!-- Imaginea de fundal -->
+            <img src="images/color.jpg" alt="FAQ Background" class="absolute w-full h-full object-cover">
+        
+            <!-- Text centrat -->
+            <div class="relative flex items-center justify-center h-full">
+                <h1 class="text-white text-3xl font-bold">FAQ</h1>
+            </div>
+        </div>
+        
+        
+        
+            <div class="mt-8 text-gray-700">
+              <p>Desigur, înțelegem că este firesc să ai întrebări când comanzi prăjituri speciale sau torturi personalizate! Suntem aici să răspundem fiecărei întrebări cu plăcere și să te ajutăm să alegi exact ce îți dorești.</p>
+              <p class="mt-4">În această secțiune, răspundem celor mai frecvente întrebări legate de produsele și serviciile noastre. Dacă nu găsești răspunsul aici, echipa noastră de suport este mereu disponibilă.</p>
+        
+              <h3 class="mt-6 text-lg font-semibold">Întrebări frecvente pentru clienți:</h3>
+              <ul class="mt-4 space-y-3">
+                <li class="flex items-center space-x-2">
+                  <span class="font-bold text-blue-500">+</span>
+                  <span>Cum să devii client VIP în brutăria ta?</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="font-bold text-blue-500">+</span>
+                  <span>Este posibil să solicitați prăjituri personalizate?</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="font-bold text-blue-500">+</span>
+                  <span>Vindeți și cursuri de alimentație finalizate?</span>
+                </li>
+              </ul>
+        
+              <!-- FAQ Answer -->
+              <div class="mt-4 p-4 bg-blue-100 text-blue-800 rounded-md">
+                Da, organizăm cu drag cursuri de alimentație și decor de prăjituri, unde puteți învăța tehnici speciale alături de brutarii noștri. După finalizarea cursurilor, veți primi un certificat care atestă participarea, și suntem convinși că va fi o experiență dulce și educativă!
+              </div>
+            </div>
+          </section>
+        
+          <!-- Contact Form -->
+          <section class="container mx-auto mt-10 px-6">
+            <h3 class="text-lg font-semibold mb-4">Contactează-ne</h3>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <form class="space-y-4">
+                <div>
+                  <label for="name" class="block text-gray-700 font-medium">Nume</label>
+                  <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                  <label for="email" class="block text-gray-700 font-medium">Email</label>
+                  <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                  <label for="message" class="block text-gray-700 font-medium">Mesaj</label>
+                  <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 rounded-md hover:bg-blue-600">
+                  Trimite acum
+                </button>
+              </form>
+            </div>
+        </div>
+      </div>
+  </div>
+  </body>
+  </html>

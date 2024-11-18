@@ -7,36 +7,47 @@
     <title>Document</title>
 </head>
 
-<body class="bg-gray-100 p-6">
+<body class="bg-gray-100">
     <script type="module" src="main.js"></script>
-
-    <!-- Header -->
-    <header class="relative">
-        <!-- Imaginea blurată -->
-        <img src="images/img38.jpg" class="w-full rounded-t-lg mb-6 object-cover h-64 filter blur-sm">
-        
-        <!-- Textul centrat peste imagine -->
-        <div class="absolute inset-0 flex justify-center items-center">
-            <h1 class="text-3xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded">OUR PRODUCTS</h1>
-        </div>
-    </header>
+<div>
+    <header class="sticky top-0 z-50 bg-gray-100 ">
+        <div class="bgwhite p-6 space-y-3 md:space-y-0 flex flex-col md:flex-row items-center justify-between">
+            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-300">BAKERY</div>
     
-
-    <!-- Prima linie de produse -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-        <!-- Card produs 1 -->
+            <div class="flex flex-col md:flex-row md:space-x-4 lg:space-x-8 items-center mt-4 md:mt-0">
+                <a href="index.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Home</a>
+                <a href="aboutUs.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">About Us</a>
+                <a href="products.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Products</a>
+                <a href="shop.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Shop</a>
+                <a href="faq.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Faq</a>
+                <a href="events.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Evenimente</a>
+                <a href="cart.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200 flex items-center">
+                    Cos <i class="bi bi-cart ml-2"></i>
+                </a>
+            </div>
+          </header>
+    
+        <!-- Imaginea ca fundal -->
+        <div class="relative h-64 bg-cover bg-center" style="background-image: url('images/bg.jpg');">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="text-3xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded">OUR PRODUCTS</h1>
+            </div>
+        </div>
+        
+    
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 space-y-6">
         <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="images/img8.jpg" alt="Prajitura cu mere" class="w-full rounded-t-lg">
-            <div class="mt-4">
+            <img src="images/muffinC.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-3">
                 <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
-                <p class="font-bold">Pret: 15 RON</p>
+                <p class="font-bold">Pret: 20 RON</p>
                 <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
             </div>
         </div>
     
-        <!-- Card produs 2 -->
         <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="images/img2.jpg" alt="Prajitura cu mere" class="w-full rounded-t-lg">
+            <img src="images/muffinC.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
             <div class="mt-4">
                 <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
                 <p class="font-bold">Pret: 20 RON</p>
@@ -44,9 +55,9 @@
             </div>
         </div>
     
-        <!-- Card produs 3 -->
+   
         <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="images/img2.jpg" alt="Prajitura cu mere" class="w-full rounded-t-lg">
+            <img src="images/macaBlue.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
             <div class="mt-4">
                 <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
                 <p class="font-bold">Pret: 18 RON</p>
@@ -54,9 +65,8 @@
             </div>
         </div>
     
-        <!-- Card produs 4 -->
         <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="images/img2.jpg" alt="Prajitura cu mere" class="w-full rounded-t-lg">
+            <img src="images/eclereCap.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
             <div class="mt-4">
                 <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
                 <p class="font-bold">Pret: 22 RON</p>
@@ -64,39 +74,145 @@
             </div>
         </div>
     
-        <!-- Card produs 5 -->
         <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="images/img2.jpg" alt="Prajitura cu mere" class="w-full rounded-t-lg">
+            <img src="images/cakeOreo.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
             <div class="mt-4">
                 <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
                 <p class="font-bold">Pret: 25 RON</p>
                 <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
             </div>
         </div>
-        <!-- Card produs 5 -->
         <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="images/img2.jpg" alt="Prajitura cu mere" class="w-full rounded-t-lg">
+            <img src="images/macaCioco.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
             <div class="mt-4">
                 <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
                 <p class="font-bold">Pret: 25 RON</p>
                 <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
             </div>
         </div>
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/eclereCara.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/eclereCap1.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/macaCocos.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/macaAf.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/cakeMan.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/fruitCake.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/macaCoffe.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/cakeCio.jpg" alt="Prajitura cu mere" class="w-full h-150 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Prajitura cu mere</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/macaBlue.jpg" alt="Macarons" class="w-full h-190 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Macarons</h3>
+                <p class="font-bold">Pret: 25 RON</p>
+                <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+            </div>
+        </div>
+        
     </div>
     <div class="bg-brown-500 p-8">
         <div class="columns-3 gap-1">
-            <img src="images/img2.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
-            <img src="images/img10.jpg" alt="Image 2" class="mb-1 w-full h-auto object-cover rounded-lg" />
-            <img src="images/img32.jpg" alt="Image 3" class="mb-1 w-full h-auto object-cover rounded-lg" />
-            <img src="images/img14.jpg" alt="Image 4" class="mb-1 w-full h-auto object-cover rounded-lg" />
-            <img src="images/img27.jpg" alt="Image 5" class="mb-1 w-full h-auto object-cover rounded-lg" />
-            <img src="images/img9.jpg" alt="Image 6" class="mb-1 w-full h-auto object-cover rounded-lg" />
-            <img src="images/img2.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
-            <img src="images/img4.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
-            <img src="images/img1.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/macaBake.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/macarons1.jpg" alt="Image 2" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/macarons4.jpg" alt="Image 3" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/cakeW.jpg" alt="Image 4" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/eclere.jpg" alt="Image 5" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/eclereCap2.jpg" alt="Image 6" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/macaBlue2.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/eclereBom.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            <img src="images/cakeMousC.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
         </div>
     </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+                
+                <!-- Despre Noi -->
+                <div class="text-center md:text-left md:w-1/2">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Despre Noi</h2>
+                    <p class="mt-2 text-gray-400 text-sm md:text-base lg:text-lg">
+                        Suntem o patiserie artizanală, dedicată preparării dulciurilor proaspete și delicioase. Vizitați-ne pentru a
+                        descoperi produsele noastre!
+                    </p>
+                </div>
     
+                <!-- Urmărește-ne -->
+                <div class="text-center md:text-right md:w-1/2">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Urmărește-ne</h2>
+                    <div class="flex justify-center md:justify-end mt-2 space-x-4 text-gray-400">
+                        <a href="#" class="hover:text-white"><i class="bi bi-facebook"></i> Facebook</a>
+                        <a href="#" class="hover:text-white"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="#" class="hover:text-white"><i class="bi bi-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Drepturi de autor -->
+            <div class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
+                <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
+            </div>
+        </div>
+    </footer>
+    </div>
     
 </body>
 
