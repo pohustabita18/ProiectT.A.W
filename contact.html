@@ -1,32 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us - Bakery</title>
 </head>
 
 <body class="bg-gray-200 font-sans antialiased">
     <script type="module" src="main.js"></script>
-    
-    <!-- Navbar -->
-     <div>
-        <header class="sticky top-0 z-50 bg-gray-200 ">
-            <div class="bgwhite p-6 space-y-3 md:space-y-0 flex flex-col md:flex-row items-center justify-between">
-                <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-300">BAKERY</div>
-        
-                <div class="flex flex-col md:flex-row md:space-x-4 lg:space-x-8 items-center mt-4 md:mt-0">
-                    <a href="index.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Home</a>
-                    <a href="aboutUs.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">About Us</a>
-                    <a href="products.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Products</a>
-                    <a href="shop.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Shop</a>
-                    <a href="faq.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Faq</a>
-                    <a href="events.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200">Evenimente</a>
-                    <a href="cart.html" class="text-base md:text-lg lg:text-xl text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-indigo-200 flex items-center">
-                        Cos <i class="bi bi-cart ml-2"></i>
-                    </a>
+
+    <div>
+        <header class="shadow-md">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
+                    <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
+                    <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
+                    <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
+                    <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
+                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
                 </div>
-              </header>
-              </div>
-              </body>
-              </html>
+
+                <button id="hamburger" class="md:hidden text-2xl text-gray-600">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden flex flex-col space-y-2 p-4 bg-gray-100">
+                <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
+                <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
+                <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
+                <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
+                <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
+                <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
+            </div>
+
+        </header>
+
+        <main class="container mx-auto p-6 lg:p-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
+                        <img src="images/location.jpg" alt="Location of the Bakery" class="w-full rounded-lg shadow-lg">
+                    </div>
+
+                    <h2 class="text-2xl font-bold mb-4">Drop Us a Line</h2>
+                    <p class="mb-6 text-gray-600">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
+                        dignissim.</p>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block font-medium">Name:</label>
+                            <input type="text" id="name" class="w-full border border-gray-300 p-3 rounded-lg"
+                                placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block font-medium">Email:</label>
+                            <input type="email" id="email" class="w-full border border-gray-300 p-3 rounded-lg"
+                                placeholder="Your Email">
+                        </div>
+                        <div>
+                            <label for="message" class="block font-medium">Message:</label>
+                            <textarea id="message" class="w-full border border-gray-300 p-3 rounded-lg"
+                                placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600">Send
+                            Now</button>
+                    </form>
+                </div>
+
+                <div class="space-y-6">
+                    <iframe class="w-full h-64 lg:w-2/3 border rounded-lg"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508616!2d144.9537353155046!3d-37.81627974202153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5774510da1c0c3e!2sFederation+Square!5e0!3m2!1sen!2sau!4v1549624674592"
+                        allowfullscreen="" loading="lazy"></iframe>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p class="font-bold">Address:</p>
+                            <p>Avenue 234</p>
+                            <p>New York - US</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Phone:</p>
+                            <p>+202 555 0116</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Email:</p>
+                            <p>info@bakery.com</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Available:</p>
+                            <p>10AM - 8PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+    
+                <div class="text-center md:text-left md:w-1/2">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-bold">About Us</h2>
+                    <p class="mt-2 text-gray-400 text-sm md:text-base lg:text-lg">
+                        We are an artisanal pastry shop dedicated to creating fresh and delicious sweets.
+                        Visit us to discover our products!
+                    </p>
+                </div>
+    
+                <div class="text-center md:text-right md:w-1/2">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Follow us</h2>
+                    <div class="flex justify-center md:justify-end mt-2 space-x-4 text-gray-400">
+                        <a href="#" class="hover:text-white"><i class="bi bi-facebook"></i> Facebook</a>
+                        <a href="#" class="hover:text-white"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="#" class="hover:text-white"><i class="bi bi-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div
+                class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
+                <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
