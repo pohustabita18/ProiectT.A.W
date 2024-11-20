@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>FAQ</title>
 </head>
 
 <body class="bg-gray-100">
@@ -13,122 +13,114 @@
   <div>
     <header class="shadow-md">
       <div class="container mx-auto flex justify-between items-center p-4">
-          <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
+        <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
 
-          <div class="hidden md:flex space-x-6">
-              <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
-              <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-              <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
-              <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
-              <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-              <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
-          </div>
-
-          <button id="hamburger" class="md:hidden text-2xl text-gray-600">
-              <i class="bi bi-list"></i>
-          </button>
-      </div>
-
-      <div id="mobile-menu" class="hidden flex flex-col space-y-2 p-4 bg-gray-100">
+        <div class="hidden md:flex space-x-6">
           <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
           <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
           <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
           <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
           <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
           <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
+        </div>
+
+        <button id="hamburger" class="md:hidden text-2xl text-gray-600">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
 
-  </header>
-    <div class="relative w-screen h-48 mt-10">
-      <img src="images/color.jpg" alt="FAQ Background" class="absolute w-full h-full object-cover">
-
-      <div class="relative flex items-center justify-center h-full">
-        <h1 class="text-white text-3xl font-bold">FAQ</h1>
+      <div id="mobile-menu" class="hidden flex flex-col space-y-2 p-4 bg-gray-100">
+        <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
+        <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
+        <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
+        <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
+        <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
+        <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
       </div>
-    </div>
+
+    </header>
 
 
-
-    <div class="mt-8 text-gray-700">
-      <p>Desigur, înțelegem că este firesc să ai întrebări când comanzi prăjituri speciale sau torturi personalizate!
-        Suntem aici să răspundem fiecărei întrebări cu plăcere și să te ajutăm să alegi exact ce îți dorești.</p>
-      <p class="mt-4">În această secțiune, răspundem celor mai frecvente întrebări legate de produsele și serviciile
-        noastre. Dacă nu găsești răspunsul aici, echipa noastră de suport este mereu disponibilă.</p>
-
-      <h3 class="mt-6 text-lg font-semibold">Întrebări frecvente pentru clienți:</h3>
-      <ul class="mt-4 space-y-3">
-        <li class="flex items-center space-x-2">
-          <span class="font-bold text-blue-500">+</span>
-          <span>Cum să devii client VIP în brutăria ta?</span>
-        </li>
-        <li class="flex items-center space-x-2">
-          <span class="font-bold text-blue-500">+</span>
-          <span>Este posibil să solicitați prăjituri personalizate?</span>
-        </li>
-        <li class="flex items-center space-x-2">
-          <span class="font-bold text-blue-500">+</span>
-          <span>Vindeți și cursuri de alimentație finalizate?</span>
-        </li>
-      </ul>
-
-      <div class="mt-4 p-4 bg-blue-100 text-blue-800 rounded-md">
-        Da, organizăm cu drag cursuri de alimentație și decor de prăjituri, unde puteți învăța tehnici speciale alături
-        de brutarii noștri. După finalizarea cursurilor, veți primi un certificat care atestă participarea, și suntem
-        convinși că va fi o experiență dulce și educativă!
+    <div class="relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 opacity-50"></div>
+      <img src="images/faq.jpg" alt="Bakery background" class="w-full h-96 object-cover">
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+        <h1 class="text-5xl font-bold">FAQ</h1>
+        <p class="mt-4 text-lg">We answer the most frequently asked questions about our products and services!</p>
       </div>
     </div>
-    </section>
-
-    <section class="container mx-auto mt-10 px-6">
-      <h3 class="text-lg font-semibold mb-4">Contactează-ne</h3>
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <form class="space-y-4">
-          <div>
-            <label for="name" class="block text-gray-700 font-medium">Nume</label>
-            <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500">
+  
+    <div class="container mx-auto my-12 px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Frequently Asked Questions for Customers</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="images/kitchen.jpg" alt="VIP Client" class="w-full h-40 object-cover rounded-t-lg">
+          <h3 class="text-xl font-bold mt-4">How can you become a VIP customer at your bakery?</h3>
+          <p class="mt-2 text-gray-600">Become a loyal customer and enjoy discounts and special offers!</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="images/tortCUSTOM1.jpg" alt="Custom Cake" class="w-full h-40 object-cover rounded-t-lg">
+          <h3 class="text-xl font-bold mt-4">Is it possible to request customized cakes?</h3>
+          <p class="mt-2 text-gray-600">Sure, we offer customized cakes for special events.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="images/coursesBake.jpg" alt="Courses" class="w-full h-40 object-cover rounded-t-lg">
+          <h3 class="text-xl font-bold mt-4">Do you also offer completed culinary courses?</h3>
+          <p class="mt-2 text-gray-600">We offer courses for cake decoration and pastry-making.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="images/delivery.jpg" alt="Courses" class="w-full h-40 object-cover rounded-t-lg">
+          <h3 class="text-xl font-bold mt-4">How far in advance should I place an order for an event?</h3>
+          <p class="mt-2 text-gray-600">We recommend placing the order at least 7 days in advance to ensure the availability of your desired products.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-gray-200 py-12">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-gray-800 mb-8 text-center">Contact Us</h3>
+        <form action="#" method="POST" class="bg-white shadow-lg rounded-lg p-8 mx-auto max-w-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-medium">Name</label>
+            <input type="text" id="name" name="name" class="w-full mt-2 p-2 border rounded">
           </div>
-          <div>
+          <div class="mb-4">
             <label for="email" class="block text-gray-700 font-medium">Email</label>
-            <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500">
+            <input type="email" id="email" name="email" class="w-full mt-2 p-2 border rounded">
           </div>
-          <div>
-            <label for="message" class="block text-gray-700 font-medium">Mesaj</label>
-            <textarea id="message" rows="4"
-              class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"></textarea>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-medium">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full mt-2 p-2 border rounded"></textarea>
           </div>
-          <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 rounded-md hover:bg-blue-600">
-            Trimite acum
-          </button>
+          <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Send Now</button>
         </form>
       </div>
+    </div>
 
-      <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-    
-                <div class="text-center md:text-left md:w-1/2">
-                    <h2 class="text-lg md:text-xl lg:text-2xl font-bold">About Us</h2>
-                    <p class="mt-2 text-gray-400 text-sm md:text-base lg:text-lg">
-                        We are an artisanal pastry shop dedicated to creating fresh and delicious sweets.
-                        Visit us to discover our products!
-                    </p>
-                </div>
-    
-                <div class="text-center md:text-right md:w-1/2">
-                    <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Follow us</h2>
-                    <div class="flex justify-center md:justify-end mt-2 space-x-4 text-gray-400">
-                        <a href="#" class="hover:text-white"><i class="bi bi-facebook"></i> Facebook</a>
-                        <a href="#" class="hover:text-white"><i class="bi bi-instagram"></i> Instagram</a>
-                        <a href="#" class="hover:text-white"><i class="bi bi-twitter"></i> Twitter</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div
-                class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
-                <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
-            </div>
+    <footer class="bg-gray-800 text-gray-300 py-6">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-bold">About Us</h3>
+          <p class="mt-2 text-sm"> We are an artisanal pastry shop dedicated to creating fresh and delicious sweets.
+            Visit us to discover our products!</p>
         </div>
+        <div>
+          <h3 class="text-lg font-bold">Contact</h3>
+          <p class="mt-2 text-sm">Email: contact@bakery.com</p>
+          <p class="text-sm">Telefon: +40 123 456 789</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">Follow Us</h3>
+          <div class="flex space-x-4 mt-2">
+            <a href="#" class="hover:text-white">Facebook</a>
+            <a href="#" class="hover:text-white">Instagram</a>
+            <a href="#" class="hover:text-white">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-sm">
+        <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
+      </div>
     </footer>
   </div>
 </body>

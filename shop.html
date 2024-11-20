@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop</title>
 </head>
 
-<body class="bg-gray-200 font-sans antialiased">
+<body class="bg-gray-100">
     <script type="module" src="main.js"></script>
-    
-    <!-- Navbar -->
-     <div>
+    <div>
         <header class="shadow-md">
             <div class="container mx-auto flex justify-between items-center p-4">
                 <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
@@ -39,34 +38,197 @@
             </div>
 
         </header>
-              <footer class="bg-gray-800 text-white py-8">
-                <div class="container mx-auto px-4">
-                    <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-            
-                        <div class="text-center md:text-left md:w-1/2">
-                            <h2 class="text-lg md:text-xl lg:text-2xl font-bold">About Us</h2>
-                            <p class="mt-2 text-gray-400 text-sm md:text-base lg:text-lg">
-                                We are an artisanal pastry shop dedicated to creating fresh and delicious sweets.
-                                Visit us to discover our products!
-                            </p>
-                        </div>
-            
-                        <div class="text-center md:text-right md:w-1/2">
-                            <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Follow us</h2>
-                            <div class="flex justify-center md:justify-end mt-2 space-x-4 text-gray-400">
-                                <a href="#" class="hover:text-white"><i class="bi bi-facebook"></i> Facebook</a>
-                                <a href="#" class="hover:text-white"><i class="bi bi-instagram"></i> Instagram</a>
-                                <a href="#" class="hover:text-white"><i class="bi bi-twitter"></i> Twitter</a>
-                            </div>
-                        </div>
+
+        <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 opacity-50"></div>
+            <img src="images/products.jpg" alt="Bakery background" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+              <h1 class="text-5xl font-bold">OUR PRODUCTS</h1>
+            </div>
+          </div>
+
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 space-y-5">
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/muffinC.jpg" alt="Chocolate muffin" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-3">
+                    <h3 class="text-lg font-semibold">Chocolate muffin</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/cakeW1.jpg" alt="Bundt cake" class="w-150 h-200 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Bundt cake</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/model.jpg" alt="Cinnamon rolls" class="w-140 h-140 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Cinnamon rolls</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/cookies.jpg" alt="Cookies" class="w-150 h-200 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Cookies</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/cakeOreo.jpg" alt="Oreo cake" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Oreo cake</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/macaCioco.jpg" alt="Chocolate macarons" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Chocolate macarons</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/macaGree.jpg" alt="Mint macarons" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Mint macarons</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/cakeW.jpg" alt="Chocolate cake covered in whipped cream" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Chocolate cake covered in whipped cream</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/praj.jpg" alt="Mini fruit cake" class="w-150 h-auto object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Mini fruit cake</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/macaAf.jpg" alt="Blueberry macarons" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Blueberry macarons</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/cakeMan.jpg" alt="Tangerine cake" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Tangerine cake</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/pacPraj.jpg" alt="Parcel cake" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Parcel cake</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/prajW.jpg" alt="Mini vanilla tart with glaze" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Mini vanilla tart with glaze</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/rulada.jpg" alt="Chocolate roll" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Chocolate roll</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="images/muffinN.jpg" alt="Muffins with nuts" class="w-150 h-150 object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Muffins with nuts</h3>
+                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-pink-50 p-8 rounded-lg shadow-lg text-center max-w-3xl mx-auto mt-16">
+            <h2 class="text-3xl font-extrabold text-blue-600 mb-6">Cakes and Pastries</h2>
+            <p class="text-gray-800 text-lg leading-relaxed">
+                Discover the joy of authentic flavors with our cakes and pastries, crafted with fresh ingredients and a
+                lot of passion!
+                Each creation is handmade with attention to detail, offering desserts that not only delight your taste
+                buds but also add a touch of magic to every special occasion.
+                Whether you're celebrating an important moment or simply craving a sweet treat, our cakes and pastries
+                are the perfect choice!
+            </p>
+        </div>
+
+
+
+
+        <div class="bg-brown-500 p-8">
+            <div class="columns-3 gap-1">
+                <img src="images/macaBake.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
+                <img src="images/macarons1.jpg" alt="Image 2" class="mb-1 w-full h-auto object-cover rounded-lg" />
+                <img src="images/macarons4.jpg" alt="Image 3" class="mb-1 w-full h-auto object-cover rounded-lg" />
+                <img src="images/fruitCake.jpg" alt="Image 4" class="mb-1 w-full h-auto object-cover rounded-lg" />
+                <img src="images/eclere.jpg" alt="Image 5" class="mb-1 w-full h-auto object-cover rounded-lg" />
+                <img src="images/eclereCap2.jpg" alt="Image 6" class="mb-1 w-full h-auto object-cover rounded-lg" />
+                <img src="images/macaBlue2.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
+                <img src="images/eclereBom.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
+                <img src="images/cakeMousC.jpg" alt="Image 1" class="mb-1 w-full h-auto object-cover rounded-lg" />
+            </div>
+
+
+        </div>
+
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+
+                    <div class="text-center md:text-left md:w-1/2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold">About Us</h2>
+                        <p class="mt-2 text-gray-400 text-sm md:text-base lg:text-lg">
+                            We are an artisanal pastry shop dedicated to creating fresh and delicious sweets.
+                            Visit us to discover our products!
+                        </p>
                     </div>
-            
-                    <div
-                        class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
-                        <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
+
+                    <div class="text-center md:text-right md:w-1/2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Follow us</h2>
+                        <div class="flex justify-center md:justify-end mt-2 space-x-4 text-gray-400">
+                            <a href="#" class="hover:text-white"><i class="bi bi-facebook"></i> Facebook</a>
+                            <a href="#" class="hover:text-white"><i class="bi bi-instagram"></i> Instagram</a>
+                            <a href="#" class="hover:text-white"><i class="bi bi-twitter"></i> Twitter</a>
+                        </div>
                     </div>
                 </div>
-            </footer>
-              </div>
-              </body>
-              </html>
+
+                <div
+                    class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
+                    <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
