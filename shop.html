@@ -13,39 +13,29 @@
         <header class="shadow-md">
             <div class="container mx-auto flex justify-between items-center p-4">
                 <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
-
+    
                 <div class="hidden md:flex space-x-6">
                     <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
                     <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                    <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
                     <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
+                    <a href="event.html" class="text-gray-600 hover:text-blue-500">Event</a>
                     <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-500">Contact</a>
+                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart <i class="bi bi-cart2"></i></a>
                 </div>
-
-                <button id="hamburger" class="md:hidden text-2xl text-gray-600">
+                <button id="btn-nav" class="md:hidden text-2xl text-gray-600">
                     <i class="bi bi-list"></i>
                 </button>
             </div>
-
-            <div id="mobile-menu" class="hidden flex flex-col space-y-2 p-4 bg-gray-100">
-                <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
-                <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
-                <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
-                <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
-            </div>
-
         </header>
 
         <div class="relative">
             <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 opacity-50"></div>
             <img src="images/products.jpg" alt="Bakery background" class="w-full h-96 object-cover">
             <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-              <h1 class="text-5xl font-bold">OUR PRODUCTS</h1>
+                <h1 class="text-5xl font-bold">OUR PRODUCTS</h1>
             </div>
-          </div>
+        </div>
 
 
 
@@ -55,7 +45,9 @@
                 <img src="images/muffinC.jpg" alt="Chocolate muffin" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-3">
                     <h3 class="text-lg font-semibold">Chocolate muffin</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button
+                        class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add
+                        to cart</button>
                 </div>
             </div>
 
@@ -63,7 +55,7 @@
                 <img src="images/cakeW1.jpg" alt="Bundt cake" class="w-150 h-200 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Bundt cake</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
 
@@ -72,7 +64,7 @@
                 <img src="images/model.jpg" alt="Cinnamon rolls" class="w-140 h-140 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Cinnamon rolls</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
 
@@ -80,7 +72,7 @@
                 <img src="images/cookies.jpg" alt="Cookies" class="w-150 h-200 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Cookies</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
 
@@ -88,35 +80,36 @@
                 <img src="images/cakeOreo.jpg" alt="Oreo cake" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Oreo cake</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md p-4">
                 <img src="images/macaCioco.jpg" alt="Chocolate macarons" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Chocolate macarons</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md p-4">
                 <img src="images/macaGree.jpg" alt="Mint macarons" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Mint macarons</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="images/cakeW.jpg" alt="Chocolate cake covered in whipped cream" class="w-150 h-150 object-cover rounded-t-lg">
+                <img src="images/cakeW.jpg" alt="Chocolate cake covered in whipped cream"
+                    class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Chocolate cake covered in whipped cream</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md p-4">
                 <img src="images/praj.jpg" alt="Mini fruit cake" class="w-150 h-auto object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Mini fruit cake</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
 
@@ -124,7 +117,7 @@
                 <img src="images/macaAf.jpg" alt="Blueberry macarons" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Blueberry macarons</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
 
@@ -132,7 +125,7 @@
                 <img src="images/cakeMan.jpg" alt="Tangerine cake" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Tangerine cake</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
 
@@ -140,29 +133,30 @@
                 <img src="images/pacPraj.jpg" alt="Parcel cake" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Parcel cake</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
 
             <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="images/prajW.jpg" alt="Mini vanilla tart with glaze" class="w-150 h-150 object-cover rounded-t-lg">
+                <img src="images/prajW.jpg" alt="Mini vanilla tart with glaze"
+                    class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Mini vanilla tart with glaze</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md p-4">
                 <img src="images/rulada.jpg" alt="Chocolate roll" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Chocolate roll</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md p-4">
                 <img src="images/muffinN.jpg" alt="Muffins with nuts" class="w-150 h-150 object-cover rounded-t-lg">
                 <div class="mt-4">
                     <h3 class="text-lg font-semibold">Muffins with nuts</h3>
-                    <button class="mt-2 bg-blue-500 text-white rounded-md px-4 py-2 w-full">Add to cart</button>
+                    <button  class="w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add to cart</button>
                 </div>
             </div>
 

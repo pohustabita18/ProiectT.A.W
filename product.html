@@ -10,7 +10,6 @@
 <body class="bg-gray-200 font-sans antialiased">
     <script type="module" src="main.js"></script>
 
-    <!-- Navbar -->
     <div>
         <header class="shadow-md">
             <div class="container mx-auto flex justify-between items-center p-4">
@@ -19,27 +18,105 @@
                 <div class="hidden md:flex space-x-6">
                     <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
                     <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                    <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
                     <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
+                    <a href="event.html" class="text-gray-600 hover:text-blue-500">Event</a>
                     <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-500">Contact</a>
+                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart <i class="bi bi-cart2"></i></a>
                 </div>
-
-                <button id="hamburger" class="md:hidden text-2xl text-gray-600">
+                <button id="btn-nav" class="md:hidden text-2xl text-gray-600">
                     <i class="bi bi-list"></i>
                 </button>
             </div>
+        </header>
 
-            <div id="mobile-menu" class="hidden flex flex-col space-y-2 p-4 bg-gray-100">
-                <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
-                <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
-                <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
-                <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
+        <div class="bg-gray-50">
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent opacity-70"></div>
+                <img src="images/product1.jpg" alt="Bakery Banner" class="w-full h-48 sm:h-56 md:h-72 object-cover">
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+                    <h1 class="text-3xl sm:text-4xl font-bold tracking-wider">Product</h1>
+                </div>
             </div>
 
-        </header>
+            <div class="container mx-auto py-12 px-4 sm:px-6">
+                <div class="flex flex-col lg:flex-row items-start lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <img src="images/product2.jpg" alt="Macarons" class="rounded-lg shadow-lg w-full object-cover">
+                    </div>
+
+                    <div class="lg:w-1/2 mt-6 lg:mt-0">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Macarons</h2>
+                        <p class="text-lg text-gray-600 mb-4">$24.00</p>
+                        <p class="text-gray-700 mb-6 text-sm sm:text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et felis vulputate,
+                            luctus elit eu, tincidunt odio. Donec varius iaculis egestas.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="recipe.html"
+                                class="w-full sm:w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">
+                                Add to Cart
+                            </a>
+                            <a href="recipe.html"
+                                class="w-full sm:w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">
+                                View Recipe
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Related Products</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+                        <div class="text-center">
+                            <img src="images/muffinC.jpg" alt="muffin"
+                                class="rounded-lg shadow-lg w-full object-cover h-32 sm:h-40">
+                            <h4 class="mt-4 text-gray-800 font-medium">Muffin</h4>
+                            <p class="text-pink-500">$25.00</p>
+                            <button
+                                class="w-full sm:w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <img src="images/macaBlue1.jpg" alt="macarons"
+                                class="rounded-lg shadow-lg w-full object-cover h-32 sm:h-40">
+                            <h4 class="mt-4 text-gray-800 font-medium">Macarons</h4>
+                            <p class="text-pink-500">$20.00</p>
+                            <button
+                                class="w-full sm:w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="text-center">
+                            <img src="images/cookies.jpg" alt="cookies"
+                                class="rounded-lg shadow-lg w-full object-cover h-32 sm:h-40">
+                            <h4 class="mt-4 text-gray-800 font-medium">Cookies</h4>
+                            <p class="text-pink-500">$20.00</p>
+                            <button
+                                class="w-full sm:w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="text-center">
+                            <img src="images/cakeMousC.jpg" alt="Cake"
+                                class="rounded-lg shadow-lg w-full object-cover h-32 sm:h-40">
+                            <h4 class="mt-4 text-gray-800 font-medium">Cake</h4>
+                            <p class="text-pink-500">$20.00</p>
+                            <button
+                                class="w-full sm:w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <footer class="bg-gray-800 text-white py-8">
             <div class="container mx-auto px-4">

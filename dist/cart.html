@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-  <script type="module" crossorigin src="./assets/main-DMPzgMMT.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-D2MQyfBr.css">
+  <script type="module" crossorigin src="./assets/main-BpsGiMum.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-C_rZNkEP.css">
 </head>
 
 <body class="bg-gray-200 font-sans antialiased">
@@ -15,30 +15,20 @@
         <header class="shadow-md">
             <div class="container mx-auto flex justify-between items-center p-4">
                 <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
-
+    
                 <div class="hidden md:flex space-x-6">
                     <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
                     <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                    <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
                     <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
+                    <a href="event.html" class="text-gray-600 hover:text-blue-500">Event</a>
                     <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-500">Contact</a>
+                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart <i class="bi bi-cart2"></i></a>
                 </div>
-
-                <button id="hamburger" class="md:hidden text-2xl text-gray-600">
+                <button id="btn-nav" class="md:hidden text-2xl text-gray-600">
                     <i class="bi bi-list"></i>
                 </button>
             </div>
-
-            <div id="mobile-menu" class="hidden flex flex-col space-y-2 p-4 bg-gray-100">
-                <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
-                <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
-                <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
-                <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
-            </div>
-
         </header>
         <div class="relative">
             <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 opacity-50"></div>
@@ -48,79 +38,77 @@
             </div>
         </div>
 
-        <div class="bg-gray-200 font-sans antialiased">
-            <div class="container mx-auto my-10">
-
-                <div class="flex flex-col lg:flex-row lg:space-x-8">
-                    <div class="w-full lg:w-2/3 bg-white rounded shadow p-6">
-                        <table class="w-full border-collapse border border-gray-300 text-left">
-                            <div class="bg-gray-100">
-                                <tr>
-                                    <th class="border border-gray-300 p-3 text-gray-700 font-semibold">Product</th>
-                                    <th class="border border-gray-300 p-3 text-gray-700 font-semibold text-center">Price
-                                    </th>
-                                    <th class="border border-gray-300 p-3 text-gray-700 font-semibold text-center">
-                                        Quantity</th>
-                                    <th class="border border-gray-300 p-3 text-gray-700 font-semibold text-center">
-                                        Subtotal</th>
-                                    <th class="border border-gray-300 p-3 text-gray-700 font-semibold text-center">
-                                        Remove</th>
-                                </tr>
-                            </div>
+        <div class="container mx-auto my-4 px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:space-x-4">
+                <div class="w-full lg:w-2/3 mb-4 lg:mb-0">
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Your Cart</h2>
+                    
+                    <div class="bg-white rounded-lg shadow p-4 sm:p-6 mb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                        <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                            <img class="w-32 h-32 mx-auto object-cover  transform transition-transform duration-600 hover:scale-110" src="./assets/muffinC1-CBZX1H4-.jpg" alt="Product Image" class="w-20 h-20 rounded">
                             <div>
-                                <tr>
-                                    <td class="border border-gray-300 p-3 flex items-center space-x-4">
-                                        <img src="https://via.placeholder.com/50" alt="Product Image"
-                                            class="w-12 h-12 rounded">
-                                        <span class="text-gray-800">Cappuccino</span>
-                                    </td>
-                                    <td class="border border-gray-300 p-3 text-center text-gray-700">$34.00</td>
-                                    <td class="border border-gray-300 p-3 text-center">
-                                        <div class="flex items-center justify-center space-x-2">
-                                            <button class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded">-</button>
-                                            <span class="text-gray-800">1</span>
-                                            <button class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="border border-gray-300 p-3 text-center text-gray-800">$34.00</td>
-                                    <td class="border border-gray-300 p-3 text-center">
-                                        <button class="text-red-600 hover:text-red-800">Remove</button>
-                                    </td>
-                                </tr>
+                                <h3 class="text-base sm:text-lg font-bold text-gray-800">Muffin</h3>
+                                <p class="text-sm sm:text-base text-gray-600">$34.00</p>
                             </div>
-                        </table>
-
-                        <div class="mt-6 flex flex-col md:flex-row items-center justify-between">
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-gray-200 hover:bg-gray-300 px-2 sm:px-3 py-1 rounded transition">-</button>
+                                <span class="text-sm sm:text-base text-gray-800">1</span>
+                                <button class="bg-gray-200 hover:bg-gray-300 px-2 sm:px-3 py-1 rounded transition">+</button>
+                            </div>
+                            <p class="text-sm sm:text-base font-bold text-gray-800">$34.00</p>
+                            <button class="text-red-600 hover:text-red-800 transition text-sm sm:text-base">Remove</button>
                         </div>
                     </div>
 
-                    <div class="w-full lg:w-1/3 bg-white rounded shadow p-6 mt-8 lg:mt-0">
-                        <h2 class="text-xl font-bold text-gray-800 mb-4">Cart Totals</h2>
-                        <div class="space-y-4">
-                            <div class="flex justify-between">
-                                <span class="text-gray-700">Subtotal:</span>
-                                <span class="text-gray-800 font-semibold">$90.00</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-700">Total:</span>
-                                <span class="text-gray-800 font-semibold">$90.00</span>
+                    <div class="bg-white rounded-lg shadow p-4 sm:p-6 mb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                        <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                            <img  class="w-32 h-32 mx-auto object-cover  transform transition-transform duration-600 hover:scale-110" src="./assets/macaW1-CMb3mzZm.jpg" alt="Product Image" class="w-20 h-20 rounded">
+                            <div>
+                                <h3 class="text-base sm:text-lg font-bold text-gray-800">Macarons</h3>
+                                <p class="text-sm sm:text-base text-gray-600">$34.00</p>
                             </div>
                         </div>
-                        <a href="checkout.html"
-                            class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg text-lg font-medium shadow flex justify-center items-center">
-                            Proceed to Checkout
-                        </a>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-gray-200 hover:bg-gray-300 px-2 sm:px-3 py-1 rounded transition">-</button>
+                                <span class="text-sm sm:text-base text-gray-800">1</span>
+                                <button class="bg-gray-200 hover:bg-gray-300 px-2 sm:px-3 py-1 rounded transition">+</button>
+                            </div>
+                            <p class="text-sm sm:text-base font-bold text-gray-800">$34.00</p>
+                            <button class="text-red-600 hover:text-red-800 transition text-sm sm:text-base">Remove</button>
+                        </div>
                     </div>
-
                 </div>
+                
+                <div class="w-full lg:w-1/3 bg-white rounded-lg shadow-lg p-6 border border-gray-200 flex flex-col">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Cart Totals</h2>
+                    <div class="space-y-4 flex-grow">
+                        <div class="flex justify-between items-center">
+                            <span class="text-base text-gray-700">Subtotal:</span>
+                            <span class="text-lg font-semibold text-gray-800">$84.00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-base text-gray-700">Total:</span>
+                            <span class="text-xl font-bold text-blue-600">$84.00</span>
+                        </div>
+                    </div>
+                    <a href="checkout.html" 
+                       class="mt-auto block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg text-lg font-medium transition duration-300">
+                        Proceed to Checkout
+                    </a>
+                </div>
+                
+                
             </div>
         </div>
-    </div>
+        
 
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-
+    
                 <div class="text-center md:text-left md:w-1/2">
                     <h2 class="text-lg md:text-xl lg:text-2xl font-bold">About Us</h2>
                     <p class="mt-2 text-gray-400 text-sm md:text-base lg:text-lg">
@@ -128,7 +116,7 @@
                         Visit us to discover our products!
                     </p>
                 </div>
-
+    
                 <div class="text-center md:text-right md:w-1/2">
                     <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Follow us</h2>
                     <div class="flex justify-center md:justify-end mt-2 space-x-4 text-gray-400">
@@ -138,8 +126,9 @@
                     </div>
                 </div>
             </div>
-
-            <div class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
+    
+            <div
+                class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
                 <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
             </div>
         </div>

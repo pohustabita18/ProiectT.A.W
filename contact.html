@@ -14,30 +14,20 @@
         <header class="shadow-md">
             <div class="container mx-auto flex justify-between items-center p-4">
                 <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
-
+    
                 <div class="hidden md:flex space-x-6">
                     <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
                     <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                    <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
                     <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
+                    <a href="event.html" class="text-gray-600 hover:text-blue-500">Event</a>
                     <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-500">Contact</a>
+                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart <i class="bi bi-cart2"></i></a>
                 </div>
-
-                <button id="hamburger" class="md:hidden text-2xl text-gray-600">
+                <button id="btn-nav" class="md:hidden text-2xl text-gray-600">
                     <i class="bi bi-list"></i>
                 </button>
             </div>
-
-            <div id="mobile-menu" class="hidden flex flex-col space-y-2 p-4 bg-gray-100">
-                <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
-                <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
-                <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
-                <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
-            </div>
-
         </header>
 
         <main class="container mx-auto p-6 lg:p-12">
@@ -57,9 +47,12 @@
                                 placeholder="Your Name">
                         </div>
                         <div>
-                            <label for="email" class="block font-medium">Email:</label>
-                            <input type="email" id="email" class="w-full border border-gray-300 p-3 rounded-lg"
-                                placeholder="Your Email">
+                            <label class="block">
+                                <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                                  Email
+                                </span>
+                                <input type="email" name="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                              </label>
                         </div>
                         <div>
                             <label for="message" class="block font-medium">Message:</label>

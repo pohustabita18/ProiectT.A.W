@@ -11,39 +11,81 @@
     <script type="module" src="main.js"></script>
 
     <div>
-        <header class="shadow-md">
-            <div class="container mx-auto flex justify-between items-center p-4">
-                <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
+      <header class="shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
 
-                <div class="hidden md:flex space-x-6">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
-                    <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                    <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
-                    <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
-                    <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                    <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
-                </div>
-
-                <button id="hamburger" class="md:hidden text-2xl text-gray-600">
-                    <i class="bi bi-list"></i>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="hidden flex flex-col space-y-2 p-4 bg-gray-100">
+            <div class="hidden md:flex space-x-6">
                 <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
                 <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
-                <a href="products.html" class="text-gray-600 hover:text-blue-500">Products</a>
                 <a href="shop.html" class="text-gray-600 hover:text-blue-500">Shop</a>
+                <a href="event.html" class="text-gray-600 hover:text-blue-500">Event</a>
                 <a href="faq.html" class="text-gray-600 hover:text-blue-500">FAQ</a>
-                <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-500">Contact</a>
+                <a href="cart.html" class="text-gray-600 hover:text-blue-500">Cart <i class="bi bi-cart2"></i></a>
             </div>
+            <button id="btn-nav" class="md:hidden text-2xl text-gray-600">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </header>
 
-        </header>
+        <div class="bg-gray-200 min-h-screen p-8">
+        <div class="flex justify-end items-start pr-10">
+          <i class="bi bi-cake-fill text-6xl"></i>
+        </div>
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+              <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">Vanilla and Hazelnut Macarons Recipe</h1>
+              
+              <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Ingredients:</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li><span class="font-semibold">For the Macaron Shells:</span></li>
+                  <ul class=" marker:text-sky-400 list-disc list-inside pl-6">
+                    <li>1 cup powdered sugar</li>
+                    <li>1 cup almond flour</li>
+                    <li>1/2 cup granulated sugar</li>
+                    <li>3 large egg whites</li>
+                    <li>A pinch of salt</li>
+                    <li>1/4 teaspoon vanilla extract</li>
+                    <li>A few drops of food coloring (optional)</li>
+                  </ul>
+                  <li><span class="font-semibold">For the Vanilla Buttercream Filling:</span></li>
+                  <ul class=" marker:text-sky-400 list-disc list-inside pl-6">
+                    <li>1/2 cup unsalted butter, softened</li>
+                    <li>1 cup powdered sugar</li>
+                    <li>1 tablespoon vanilla extract</li>
+                    <li>1 tablespoon milk or heavy cream</li>
+                    <li>1/4 cup finely chopped hazelnuts (roasted)</li>
+                  </ul>
+                </ul>
+              </div>
+              
+              <div>
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Instructions:</h2>
+                <ol class="list-decimal list-inside space-y-4 text-gray-600">
+                  <li>
+                    <span class="font-semibold">Prepare the Macaron Shells:</span> Sift together the powdered sugar and almond flour into a bowl. In a separate bowl, whisk the egg whites with a pinch of salt until stiff peaks form. Gradually add the granulated sugar to the egg whites while continuing to whisk, until the mixture is glossy and thick. Gently fold in the sifted almond flour mixture into the egg whites, along with the vanilla extract. If desired, add a few drops of food coloring. Pipe the mixture onto a baking sheet and let it sit to form a skin, then bake for 15-18 minutes.
+                  </li>
+                  <li>
+                    <span class="font-semibold">Make the Vanilla Buttercream Filling:</span> In a bowl, beat the softened butter until fluffy. Gradually add powdered sugar and mix until smooth. Add vanilla extract and milk (or cream), then fold in chopped hazelnuts.
+                  </li>
+                  <li>
+                    <span class="font-semibold">Assemble the Macarons:</span> Once the macaron shells are cooled, pair them up by size. Pipe a small amount of vanilla buttercream onto the flat side of one macaron shell, then sandwich it with another shell. Press gently.
+                  </li>
+                  <li>
+                    <span class="font-semibold">Chill and Serve:</span> Let the assembled macarons chill in the fridge for 24 hours before serving.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>          
+        
 
         <footer class="bg-gray-800 text-white py-8">
             <div class="container mx-auto px-4">
                 <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-
+        
                     <div class="text-center md:text-left md:w-1/2">
                         <h2 class="text-lg md:text-xl lg:text-2xl font-bold">About Us</h2>
                         <p class="mt-2 text-gray-400 text-sm md:text-base lg:text-lg">
@@ -51,7 +93,7 @@
                             Visit us to discover our products!
                         </p>
                     </div>
-
+        
                     <div class="text-center md:text-right md:w-1/2">
                         <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Follow us</h2>
                         <div class="flex justify-center md:justify-end mt-2 space-x-4 text-gray-400">
@@ -61,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <div
                     class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-xs md:text-sm lg:text-base">
                     <a><i class="bi bi-c-circle"></i></a> 2024 Bakery
