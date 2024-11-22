@@ -6,14 +6,45 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-</head>
-
-<body class="bg-gray-100">
-    <script type="module" src="main.js"></script>
-    <div>
-        <header class="shadow-md">
-            <div class="container mx-auto flex justify-between items-center p-4">
-                <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
+    <style>
+        .text-focus-in {
+         -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                 animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+     }
+     @-webkit-keyframes text-focus-in {
+       0% {
+         -webkit-filter: blur(12px);
+                 filter: blur(12px);
+         opacity: 0;
+       }
+       100% {
+         -webkit-filter: blur(0px);
+                 filter: blur(0px);
+         opacity: 1;
+       }
+     }
+     @keyframes text-focus-in {
+       0% {
+         -webkit-filter: blur(12px);
+                 filter: blur(12px);
+         opacity: 0;
+       }
+       100% {
+         -webkit-filter: blur(0px);
+                 filter: blur(0px);
+         opacity: 1;
+       }
+     }
+     
+     </style>
+     </head>
+     
+     <body class="bg-gray-100">
+       <script type="module" src="main.js"></script>
+       <div>
+         <header class="shadow-md">
+           <div class="container mx-auto flex justify-between items-center p-4">
+             <h1 class="text-3xl font-bold text-blue-600 animate-typing text-focus-in">BAKERY</h1>
 
                 <div class="hidden md:flex space-x-6">
                     <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
@@ -69,7 +100,6 @@
                     </div>
                 </div>
 
-                <!-- Repeat for other items -->
                 <div class="bg-white rounded-lg shadow-md p-4">
                     <img src="images/cakeW1.jpg" alt="Bundt cake" class="w-full h-auto object-cover rounded-t-lg">
                     <div class="mt-4">
@@ -101,6 +131,15 @@
                     <img src="images/rulada.jpg" alt="Bundt cake" class="w-full h-auto object-cover rounded-t-lg">
                     <div class="mt-4">
                         <h3 class="text-lg font-semibold">Bundt cake</h3>
+                        <button
+                            class="w-full sm:w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add
+                            to cart</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="images/cakeCandy2.jpg" alt=" wedding cake" class="w-full h-auto object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold">Wedding cake</h3>
                         <button
                             class="w-full sm:w-40 bg-blue-500 hover:bg-gray-600 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">Add
                             to cart</button>

@@ -6,16 +6,31 @@
   <link rel="icon" type="image/svg+xml" href="./vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ</title>
-  <script type="module" crossorigin src="./assets/main-C3hqTyWQ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-jC1tsPhm.css">
+  <style>
+   .text-focus-in {
+	animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+</style>
+  <script type="module" crossorigin src="./assets/main-5cJEDZ64.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-DcG6rG0K.css">
 </head>
 
 <body class="bg-gray-100">
   <div>
     <header class="shadow-md">
       <div class="container mx-auto flex justify-between items-center p-4">
-          <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
-
+        <h1 class="text-3xl font-bold text-blue-600 animate-typing text-focus-in">BAKERY</h1>
           <div class="hidden md:flex space-x-6">
               <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
               <a href="aboutUs.html" class="text-gray-600 hover:text-blue-500">About Us</a>
@@ -34,7 +49,7 @@
 
     <div class="relative">
       <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 opacity-50"></div>
-      <img src="./assets/faq-Ctpbgo6h.jpg" alt="Bakery background" class="w-full h-96 object-cover">
+      <img src="./assets/faq-Ctpbgo6h.jpg" alt="Bakery background" class="w-full h-96 object-cover ">
       <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
         <h1 class="text-5xl font-bold">FAQ</h1>
         <p class="mt-4 text-lg">We answer the most frequently asked questions about our products and services!</p>

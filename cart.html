@@ -5,15 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-</head>
-
-<body class="bg-gray-200 font-sans antialiased">
-    <script type="module" src="main.js"></script>
-
-    <div>
-        <header class="shadow-md">
-            <div class="container mx-auto flex justify-between items-center p-4">
-                <h1 class="text-3xl font-bold text-blue-600">BAKERY</h1>
+    <style>
+        .text-focus-in {
+         -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                 animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+     }
+     @-webkit-keyframes text-focus-in {
+       0% {
+         -webkit-filter: blur(12px);
+                 filter: blur(12px);
+         opacity: 0;
+       }
+       100% {
+         -webkit-filter: blur(0px);
+                 filter: blur(0px);
+         opacity: 1;
+       }
+     }
+     @keyframes text-focus-in {
+       0% {
+         -webkit-filter: blur(12px);
+                 filter: blur(12px);
+         opacity: 0;
+       }
+       100% {
+         -webkit-filter: blur(0px);
+                 filter: blur(0px);
+         opacity: 1;
+       }
+     }
+     
+     </style>
+     </head>
+     
+     <body class="bg-gray-100">
+       <script type="module" src="main.js"></script>
+       <div>
+         <header class="shadow-md">
+           <div class="container mx-auto flex justify-between items-center p-4">
+             <h1 class="text-3xl font-bold text-blue-600 animate-typing text-focus-in">BAKERY</h1>
     
                 <div class="hidden md:flex space-x-6">
                     <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
